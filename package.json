@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-prefer-normalized-styled-components",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Prefer the use of normalized styled components where available",
   "keywords": [
     "eslint",

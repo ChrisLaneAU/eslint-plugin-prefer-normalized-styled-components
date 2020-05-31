@@ -24,6 +24,8 @@ ruleTester.run("prefer-normalized-styled-components", rule, {
         "styled(Svg)", // should allow if it's a normalized-styled-component
         "styled.div", // shouldn't throw if the property isn't a normalized-styled-component
         "styled(CustomComponent)", // should allow custom components
+        "customFunction(svg)", // shouldn't throw if using custom function
+        "customFunction.svg", // shouldn't throw if using custom object
     ],
 
     invalid: [

@@ -1,6 +1,6 @@
 # eslint-plugin-prefer-normalized-styled-components
 
-Prefer the use of normalized styled components where available
+Warn when a normalized styled component alternative is available
 
 ## Installation
 

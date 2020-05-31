@@ -1,6 +1,6 @@
 /**
  * @fileoverview Use normalized styled components where available
- * @author Chris
+ * @author Chris Lane
  */
 "use strict";
 

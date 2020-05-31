@@ -21,16 +21,17 @@ var ruleTester = new RuleTester();
 ruleTester.run("prefer-normalized-styled-components", rule, {
 
     valid: [
-
-        // give me some code that won't trigger a warning
+        "styled(Svg)", // should allow if it's a normalized-styled-component
+        "styled.div", // shouldn't throw if the property isn't a normalized-styled-component
+        "styled(CustomComponent)", // should allow custom components
     ],
 
     invalid: [
         {
-            code: "const StyledSvg = styled.svg`",
+            code: "styled.svg", // should throw if it has a normalized alternative
             errors: [{
-                message: "Fill me in.",
-                type: "Me too"
+                message: "You will need to import Svg from normalized-styled-components",
+                type: "Identifier"
             }]
         }
     ]
